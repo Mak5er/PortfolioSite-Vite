@@ -1,50 +1,59 @@
-# React + TypeScript + Vite
+<h2 align="center">
+  Portfolio Website <br/>
+  <a href="https://makser.pp.ua" target="_blank">makser.pp.ua</a>
+</h2>
+<div align="center">
+  <img alt="Demo" src="https://i.imgur.com/plRtoy2.png" style="border-radius: 15px;" />
+</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Built With
 
-Currently, two official plugins are available:
+My personal portfolio with some of my GitHub projects and technical skills.<br>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project was built using these technologies.
 
-## Expanding the ESLint configuration
+- React
+- TypeScript
+- Vite
+- MUI5
+- WebStorm
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+📖 Multi-Page Layout
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+🎨 Styled with React-Bootstrap and MUI Theme with easy-to-customize colors
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+📱 Fully Responsive
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Getting Started
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Clone down this repository. You will need `vite` and `git` installed globally on your machine.
+
+## 🛠 Installation and Setup Instructions
+
+1. Installation: `npm install`
+
+2. In the project directory, you can run: `vite`
+
+Runs the app in the development mode.\
+Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+The page will reload if you make edits.
+
+## 🔨 Build and Serve for Production
+
+1. To build the project for production, run:  
+   `vite build`
+
+2. To serve the production build, use a static server. Install `serve` globally if you don't have it:  
+   `npm install -g serve`
+
+3. Now, you can serve the production build:  
+   `serve -s dist`
+
+This will start the app in production mode. Open [http://localhost:3000](http://localhost:3000) to view it in the
+browser.
+
+### Show your support
+
+Give a ⭐ if you like this website!
