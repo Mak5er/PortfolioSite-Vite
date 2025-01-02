@@ -28,7 +28,7 @@ const Home = () => {
             <Helmet>
                 <title>Mak5er</title>
                 <meta name="description"
-                      content="Welcome to my site! I'm Maks, a programmer interested in building Telegram bots and DevOps. Here, you'll learn more about me. Connect with me on GitHub, Twitter, Telegram, and Instagram, and let's build something amazing together!"/>
+                      content="Welcome to my site! I'm Maks, a programmer interested in building Telegram bots, WebDev and DevOps. Here, you'll learn more about me. Connect with me on GitHub, Twitter, Telegram, and Instagram, and let's build something amazing together!"/>
                 <meta name="keywords"
                       content="Mak5er, Makser, Maksym, Reva, Maksym Reva, portfolio, Telegram bots, DevOps, React, programming, developer, projects, web development, Telegram bot development, aiogramvite"/>
                 <meta name="keywords" lang="uk"

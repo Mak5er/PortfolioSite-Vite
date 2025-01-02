@@ -67,7 +67,7 @@ const Projects = () => {
             <Helmet>
                 <title>Mak5er | My Projects</title>
                 <meta name="description"
-                      content="Welcome to my project`s page. Explore my code, try demo and feel free."/>
+                      content="Welcome to my project`s page. Explore my code, try demo and feel free to fork and contribute."/>
             </Helmet>
             <Typography
                 variant="h3"

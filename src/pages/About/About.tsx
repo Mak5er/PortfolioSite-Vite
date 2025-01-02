@@ -29,7 +29,7 @@ const About = () => {
             <Helmet>
                 <title>Mak5er | About</title>
                 <meta name="description"
-                      content="Learn something about me. Programming skills, my hobbies and tech stacks."/>
+                      content="Learn something about me. My programming skills, hobbies and tech/tool stacks."/>
             </Helmet>
             <Grid container spacing={2} alignItems="center" justifyContent="center"
                   style={{position: 'relative', zIndex: 1, paddingTop: '100px', paddingBottom: '20px'}}>
