@@ -21,7 +21,7 @@ const Footer = () => {
                 <Grid size={{md: 4, xs: 12}}>
                     <Typography variant="body2" color="textSecondary" align="center" sx={{mt: 1}}>
                         {'Copyright © '}
-                        <a href="https://makser.pp.ua" style={{color: 'inherit', textDecoration: 'none'}}>
+                        <a href="https://mak5er.com" style={{color: 'inherit', textDecoration: 'none'}}>
                             Mak5er
                         </a>{' '}
                         {new Date().getFullYear()}

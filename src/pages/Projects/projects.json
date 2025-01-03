@@ -33,5 +33,12 @@
     "description": "A website with jokes. It has features like user authentication, liking or disliking, dark and light themes, sharing jokes, and a history of read jokes.",
     "github": "https://github.com/Mak5er/anekdoty",
     "demo": "https://ujokes.pp.ua/"
+  },
+  {
+    "title": "Layout Changer",
+    "photo": "https://res.cloudinary.com/dnucfrps6/image/upload/f_auto,q_auto/layoutChanger_cridlt",
+    "description": "Layout Changer is a web application built with React and Material-UI that allows users to easily switch between English QWERTY and Ukrainian YCUKEN keyboard layouts.",
+    "github": "https://github.com/Mak5er/layout-changer",
+    "demo": "https://layout.mak5er.com/"
   }
 ]
