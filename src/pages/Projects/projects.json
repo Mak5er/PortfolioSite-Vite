@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Joke-Bot",
+    "photo": "https://res.cloudinary.com/dnucfrps6/image/upload/f_auto,q_auto/v1/ProjectsPhotos/djwjgaiixzx4ait56nc7",
+    "description": "This code is a Python script for a Telegram bot. It utilizes the aiogram library for interacting with the Telegram Bot API and includes various functionalities for handling user interactions, sending jokes, managing bans, and more.",
+    "github": "https://github.com/Mak5er/Joke-Bot",
+    "demo": "https://t.me/AnekdotyRobot"
+  },
+  {
+    "title": "Multi-Bot",
+    "photo": "https://res.cloudinary.com/dnucfrps6/image/upload/f_auto,q_auto/v1/ProjectsPhotos/djwjgaiixzx4ait56nc7",
+    "description": "This project is a Telegram bot - multitool where users can perform various daily tasks. The bot is implemented using the Python programming language and uses the Aiogram framework to interact with the Telegram API.",
+    "github": "https://github.com/Mak5er/Multi-Bot",
+    "demo": "https://t.me/MakserMultiBot"
+  },
+  {
+    "title": "Downloader-Bot",
+    "photo": "https://res.cloudinary.com/dnucfrps6/image/upload/f_auto,q_auto/v1/ProjectsPhotos/djwjgaiixzx4ait56nc7",
+    "description": "A bot for downloading videos, photos, and audio from social networks. 📱 Currently available - TikTok, Instagram, YouTube, X(Twitter). Just send the bot a link. 🔗 The bot can also be added to the chat! 💬",
+    "github": "https://github.com/Mak5er/Downloader-Bot",
+    "demo": "https://t.me/MaxLoadBot"
+  },
+  {
+    "title": "Joke-Site",
+    "photo": "https://res.cloudinary.com/dnucfrps6/image/upload/v1735909883/ProjectsPhotos/jeqiyrbxpk97ycwvrmnz.webp",
+    "description": "React and Flask API based site with Ukrainian jokes. This project consists of a React frontend and a Flask backend, designed to bring laughter to your day with a collection of ukrainian jokes🇺🇦",
+    "github": "https://github.com/Mak5er/joke-site-react",
+    "demo": "https://anekdoty.pp.ua/"
+  },
+  {
+    "title": "UJokes",
+    "photo": "https://res.cloudinary.com/dnucfrps6/image/upload/f_auto,q_auto/v1/ProjectsPhotos/hps66y1gswr2rbexy5fn",
+    "description": "A website with jokes. It has features like user authentication, liking or disliking, dark and light themes, sharing jokes, and a history of read jokes.",
+    "github": "https://github.com/Mak5er/anekdoty",
+    "demo": "https://ujokes.pp.ua/"
+  }
+]

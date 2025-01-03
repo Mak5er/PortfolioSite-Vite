@@ -1,14 +1,13 @@
 import React from 'react';
-import {useTheme} from '@mui/material/styles'; // Import useTheme hook
+import {useTheme} from '@mui/material/styles';
 
 interface SvgIconProps {
-    className?: string;
     width?: string | number;
     height?: string | number;
 }
 
-const Logo: React.FC<SvgIconProps> = ({className, width, height}) => {
-    const theme = useTheme(); // Access theme for dynamic color
+const Logo: React.FC<SvgIconProps> = ({width, height}) => {
+    const theme = useTheme();
 
     return (
         <svg fill={theme.palette.primary.main}

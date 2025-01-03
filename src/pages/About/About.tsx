@@ -19,12 +19,12 @@ const About = () => {
 
     return (
         <Container
-            style={{
+            sx={{
                 height: '100%',
                 display: 'flex',
                 alignItems: 'center',
-                paddingTop: '70px',
-                paddingBottom: '70px'
+                pt: '30px',
+                pb: '70px'
             }}>
             <Helmet>
                 <title>Mak5er | About</title>
@@ -32,7 +32,7 @@ const About = () => {
                       content="Learn something about me. My programming skills, hobbies and tech/tool stacks."/>
             </Helmet>
             <Grid container spacing={2} alignItems="center" justifyContent="center"
-                  style={{position: 'relative', zIndex: 1, paddingTop: '100px', paddingBottom: '20px'}}>
+                  sx={{position: 'relative', zIndex: 1, pt: {xs: '5rem', md: '9rem'}, pb: '20px'}}>
                 <Grid size={{xs: 12, md: 8}}>
                     <Typography variant="h3" color="textPrimary" gutterBottom>
                         LET ME <Box component="span"
@@ -73,7 +73,15 @@ const About = () => {
                 </Grid>
                 <Grid size={{xs: 12, md: 4}} style={{textAlign: 'center'}}>
                     <Tilt tiltReverse={true}>
-                        <img src={avatar} alt="Profile" style={{width: 'auto', maxHeight: '550px'}}/>
+                        <Box
+                            component='img'
+                            src={avatar}
+                            alt="Profile"
+                            fetchPriority='high'
+                            style={{
+                                width: 'auto',
+                                maxHeight: '550px'
+                            }}/>
                     </Tilt>
                 </Grid>
                 <Grid size={{xs: 12}}>

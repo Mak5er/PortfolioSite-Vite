@@ -11,11 +11,11 @@ declare module '@mui/material/styles' {
     }
 
     interface TypeBackground {
-        menu: string; // Тип для menu
+        menu: string;
     }
 
     interface BackgroundOptions {
-        menu?: string; // Тип для menu в options
+        menu?: string;
     }
 }
 

@@ -5,14 +5,16 @@ import {HouseOutlined, PersonOutline, TerminalOutlined} from '@mui/icons-materia
 import Typing from "./components/Typing";
 import {Link} from 'react-router-dom';
 
-import homeImage from '../../assets/home-image.svg';
+import homeImage from '../../assets/home-image.webp';
 import {Helmet} from "react-helmet";
 
 const Home = () => {
 
+
     useEffect(() => {
         document.title = "Mak5er";
     }, []);
+
 
     return (
         <Container
@@ -33,12 +35,9 @@ const Home = () => {
                       content="Mak5er, Makser, Maksym, Reva, Maksym Reva, portfolio, Telegram bots, DevOps, React, programming, developer, projects, web development, Telegram bot development, aiogramvite"/>
                 <meta name="keywords" lang="uk"
                       content="Mak5er, Makser, Maksym, Reva, Maksym Reva, портфоліо, Telegram боти, DevOps, React, програмування, розробник, проекти, веб-розробка, розробка Telegram ботів, aiogram, аіограм"/>
-
-
             </Helmet>
             <Grid container spacing={2} alignItems="center" justifyContent="center"
-                  sx={{position: 'relative', zIndex: 1, pt: '9rem', pb: '2rem'}}
-            >
+                  sx={{position: 'relative', zIndex: 1, pt: {xs: '5rem', md: '9rem'}, pb: '2rem', minHeight: '600px'}}>
 
                 <Grid size={{xs: 12, md: 6}} component='div' sx={{textAlign: 'left', position: 'relative'}}>
                     <Typography variant="h2" color="textPrimary" gutterBottom>
@@ -62,16 +61,24 @@ const Home = () => {
                                 to="/projects" startIcon={<TerminalOutlined/>}>Projects</Button>
                     </Toolbar>
                 </Grid>
-                <Grid size={{xs: 12, md: 6}} component='div' sx={{textAlign: 'right', position: 'relative'}}>
-                    <img
+                <Grid size={{xs: 12, md: 6}} component='div'
+                      sx={{justifyContent: 'flex-end', display: 'flex', position: 'relative'}}>
+                    <Box
+                        component="img"
                         src={homeImage}
                         alt="Illustration"
-                        style={{
-                            maxHeight: '450px',
-                            maxWidth: '100%',
+                        fetchPriority="high"
+                        sx={{
+                            height: '100%',
+                            width: '100%',
+                            maxHeight: '500px',
+                            objectFit: 'contain',
+                            borderRadius: 2,
+                            display: 'block',
                         }}
                     />
                 </Grid>
+
             </Grid>
         </Container>
     );

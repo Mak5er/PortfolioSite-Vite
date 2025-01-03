@@ -7,13 +7,14 @@ import {darkTheme, lightTheme} from './themes/theme';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import LoadingSpinner from './components/LoadingSpinner';
+import ScrollToTop from "./components/ScrollToTop";
 import ParticlesBackground from './components/ParticlesBackground';
 import './App.css';
 
 const Error404 = lazy(() => import('./pages/Error404'));
 const Home = lazy(() => import('./pages/Home/Home'));
 const About = lazy(() => import('./pages/About/About'));
-const Projetcs = lazy(() => import('./pages/Projects/Projects'));
+const Projects = lazy(() => import('./pages/Projects/Projects'));
 
 function App() {
     const [theme, setTheme] = useState(darkTheme);
@@ -27,20 +28,20 @@ function App() {
             <CssBaseline/>
             <Router>
                 <div className="app-container">
-                    <Header toggleTheme={toggleTheme}/>
-                    <div className='content'>
-                        <ParticlesBackground/>
-
-                        <Suspense fallback={<LoadingSpinner/>}>
+                    <Suspense fallback={<LoadingSpinner/>}>
+                        <Header toggleTheme={toggleTheme}/>
+                        <div className='content'>
+                            <ParticlesBackground/>
+                            <ScrollToTop/>
                             <Routes>
                                 <Route path='*' element={<Error404/>}/>
                                 <Route path="/" element={<Home/>}/>
                                 <Route path="/about" element={<About/>}/>
-                                <Route path="/projects" element={<Projetcs/>}/>
+                                <Route path="/projects" element={<Projects/>}/>
                             </Routes>
-                        </Suspense>
-                    </div>
-                    <Footer/>
+                        </div>
+                        <Footer/>
+                    </Suspense>
                 </div>
             </Router>
         </ThemeProvider>

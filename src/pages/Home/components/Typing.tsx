@@ -4,11 +4,11 @@ const Typing = () => {
     return (
         <TypeAnimation
             sequence={[
-                'Beginner FullStack Developer', // Types 'One'
-                2000, // Waits 1s
-                'Telegram Bots Developer', // Deletes 'One' and types 'Two'
-                3000, // Waits 2s
-                'Open Source Contributor', // Types 'Three' without deleting 'Two'
+                'Beginner FullStack Developer',
+                2000,
+                'Telegram Bots Developer',
+                3000,
+                'Open Source Contributor',
             ]}
             wrapper="span"
             cursor={true}
