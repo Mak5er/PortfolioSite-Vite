@@ -30,11 +30,7 @@ const Home = () => {
             <Helmet>
                 <title>Mak5er</title>
                 <meta name="description"
-                      content="Welcome to my site! I'm Maks, a programmer interested in building Telegram bots, WebDev and DevOps. Here, you'll learn more about me. Connect with me on GitHub, Twitter, Telegram, and Instagram, and let's build something amazing together!"/>
-                <meta name="keywords"
-                      content="Mak5er, Makser, Maksym, Reva, Maksym Reva, portfolio, Telegram bots, DevOps, React, programming, developer, projects, web development, Telegram bot development, aiogramvite"/>
-                <meta name="keywords" lang="uk"
-                      content="Mak5er, Makser, Maksym, Reva, Maksym Reva, портфоліо, Telegram боти, DevOps, React, програмування, розробник, проекти, веб-розробка, розробка Telegram ботів, aiogram, аіограм"/>
+                      content="Welcome to my portfolio! I’m Maks, a programmer from Ukraine. Explore my work and get in touch with me here!"/>
             </Helmet>
             <Grid container spacing={2} alignItems="center" justifyContent="center"
                   sx={{position: 'relative', zIndex: 1, pt: {xs: '5rem', md: '9rem'}, pb: '2rem', minHeight: '600px'}}>
