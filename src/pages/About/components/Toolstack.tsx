@@ -1,6 +1,6 @@
 import {Box, Container, Grid2 as Grid, Typography} from "@mui/material";
 import {SiMacos, SiOracle, SiPycharm, SiRender, SiUbuntu, SiVercel, SiWebstorm,} from "react-icons/si";
-import {FaAws, FaWindows} from "react-icons/fa";
+import {FaAws, FaGithub, FaWindows} from "react-icons/fa";
 
 
 const tools = [
@@ -9,6 +9,7 @@ const tools = [
     {icon: <SiMacos/>, name: 'MacOS'},
     {icon: <SiPycharm/>, name: 'PyCharm'},
     {icon: <SiWebstorm/>, name: 'WebStorm'},
+    {icon: <FaGithub/>, name: 'GitHub'},
     {icon: <SiOracle/>, name: 'OCI'},
     {icon: <FaAws/>, name: 'AWS'},
     {icon: <SiRender/>, name: 'Render'},

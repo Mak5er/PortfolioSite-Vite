@@ -1,18 +1,20 @@
 import {DiGit, DiJavascript1, DiPython, DiReact} from "react-icons/di";
-import {SiCss3, SiDjango, SiHtml5, SiPostgresql, SiSqlite, SiTelegram} from "react-icons/si";
+import {SiCss3, SiDjango, SiHtml5, SiPostgresql, SiSqlite, SiTelegram, SiTypescript, SiVite} from "react-icons/si";
 import {Box, Container, Grid2 as Grid, Typography} from "@mui/material";
 
 const techs = [
     {icon: <DiJavascript1/>, name: 'JavaScript'},
-    {icon: <DiPython/>, name: 'Python'},
-    {icon: <SiTelegram/>, name: 'Aiogram'},
-    {icon: <DiReact/>, name: 'React'},
-    {icon: <SiDjango/>, name: 'Django'},
-    {icon: <DiGit/>, name: 'Git'},
-    {icon: <SiPostgresql/>, name: 'PostgreSQL'},
-    {icon: <SiSqlite/>, name: 'SQLite'},
+    {icon: <SiTypescript/>, name: 'TypeScript'},
     {icon: <SiHtml5/>, name: 'HTML5'},
     {icon: <SiCss3/>, name: 'CSS3'},
+    {icon: <DiReact/>, name: 'React'},
+    {icon: <SiVite/>, name: 'Vite'},
+    {icon: <DiPython/>, name: 'Python'},
+    {icon: <SiTelegram/>, name: 'Aiogram'},
+    {icon: <SiDjango/>, name: 'Django'},
+    {icon: <SiPostgresql/>, name: 'PostgreSQL'},
+    {icon: <SiSqlite/>, name: 'SQLite'},
+    {icon: <DiGit/>, name: 'Git'},
 ];
 
 
