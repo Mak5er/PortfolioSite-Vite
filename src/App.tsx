@@ -17,12 +17,21 @@ const About = lazy(() => import('./pages/About/About'));
 const Projects = lazy(() => import('./pages/Projects/Projects'));
 
 function App() {
-    const [theme, setTheme] = useState(darkTheme);
-
-    const toggleTheme = () => {
-        setTheme(theme === lightTheme ? darkTheme : lightTheme);
+    const getInitialTheme = () => {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            return savedTheme === 'light' ? lightTheme : darkTheme;
+        }
+        return darkTheme;
     };
 
+    const [theme, setTheme] = useState(getInitialTheme);
+
+    const toggleTheme = () => {
+        const newTheme = theme === lightTheme ? darkTheme : lightTheme;
+        setTheme(newTheme);
+        localStorage.setItem('theme', newTheme === lightTheme ? 'light' : 'dark');
+    };
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline/>

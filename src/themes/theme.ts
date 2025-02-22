@@ -57,7 +57,7 @@ export const darkTheme: ThemeOptions = createTheme({
     },
 });
 
-const mainColorLight = '#4a65e8';
+const mainColorLight = '#2b32a1';
 
 export const lightTheme: ThemeOptions = createTheme({
     palette: {
@@ -66,24 +66,23 @@ export const lightTheme: ThemeOptions = createTheme({
             main: mainColorLight,
         },
         background: {
-            default: '#E3E6ECFF',
-            paper: '#E3E6ECFF',
-            menu: '#DBE2EF',
+            default: '#f5faff',
+            paper: '#ffffff',
+            menu: '#e3f2fd',
         },
         text: {
-            primary: '#000000',
-            secondary: '#112D4E',
+            primary: '#000e1e',
+            secondary: '#4f4f4f',
         },
         footer: {
-            main: '#DBE2EF',
+            main: '#e3f2fd',
         },
-
     },
     components: {
         MuiCard: {
             styleOverrides: {
                 root: {
-                    backgroundColor: '#DBE2EF',
+                    backgroundColor: '#ffffff',
                     '&:hover': {
                         boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
                     },
