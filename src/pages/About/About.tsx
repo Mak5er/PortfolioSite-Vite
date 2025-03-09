@@ -1,7 +1,8 @@
 import {Helmet} from "react-helmet";
 import {Box, Container, Grid2 as Grid, IconButton, Typography} from '@mui/material';
-import {GitHub, Instagram, Telegram, Twitter} from "@mui/icons-material";
-import {FaMousePointer} from "react-icons/fa";
+import {FaGithub, FaInstagram, FaMousePointer, FaTwitter} from 'react-icons/fa';
+import {RiTelegram2Fill} from "react-icons/ri";
+import {useTheme} from '@mui/material/styles';
 
 import Tilt from "react-parallax-tilt";
 import avatar from '../../assets/avatar.svg';
@@ -12,6 +13,7 @@ import {useEffect} from "react";
 
 
 const About = () => {
+    const theme = useTheme();
 
     useEffect(() => {
         document.title = "Mak5er | About";
@@ -97,23 +99,24 @@ const About = () => {
                 <Grid size={{xs: 12, md: 12}} style={{textAlign: 'center'}}>
                     <Box sx={{marginTop: '3rem'}}>
                         <Typography variant="h4" color="textPrimary" gutterBottom>
-                            FIND ME ON
+                            FIND ME <Box component='a' href="/links"
+                                         sx={{color: 'primary.main', textDecoration: 'none'}}>ON</Box>
                         </Typography>
                         <Typography variant="h6" color="textPrimary">
                             Feel free to connect with me
                         </Typography>
                         <Box>
                             <IconButton aria-label="GitHub" href="https://github.com/Mak5er">
-                                <GitHub sx={{color: 'primary.main'}}/>
+                                <FaGithub style={{ color: theme.palette.primary.main }}/>
                             </IconButton>
                             <IconButton aria-label="Twitter" href="https://x.com/Mak5er1">
-                                <Twitter sx={{color: 'primary.main'}}/>
+                                <FaTwitter style={{ color: theme.palette.primary.main }}/>
                             </IconButton>
                             <IconButton aria-label="Telegram" href="https://t.me/mak5er">
-                                <Telegram sx={{color: 'primary.main'}}/>
+                                <RiTelegram2Fill style={{ color: theme.palette.primary.main }}/>
                             </IconButton>
                             <IconButton aria-label="Instagram" href="https://www.instagram.com/mak5er/">
-                                <Instagram sx={{color: 'primary.main'}}/>
+                                <FaInstagram style={{ color: theme.palette.primary.main }}/>
                             </IconButton>
                         </Box>
                     </Box>

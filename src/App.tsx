@@ -14,6 +14,7 @@ import './App.css';
 const Error404 = lazy(() => import('./pages/Error404'));
 const Home = lazy(() => import('./pages/Home/Home'));
 const About = lazy(() => import('./pages/About/About'));
+const Links = lazy(() => import('./pages/Links/Links'));
 const Projects = lazy(() => import('./pages/Projects/Projects'));
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
                                 <Route path='*' element={<Error404/>}/>
                                 <Route path="/" element={<Home/>}/>
                                 <Route path="/about" element={<About/>}/>
+                                <Route path="/links" element={<Links/>}/>
                                 <Route path="/projects" element={<Projects/>}/>
                             </Routes>
                         </div>
